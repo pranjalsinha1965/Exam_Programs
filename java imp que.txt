@@ -1,0 +1,815 @@
+1) What is Java?
+Java is the high-level, object-oriented, robust, secure programming language, platform-independent, high performance, Multithreaded, 
+and portable programming language. It was developed by James Gosling in June 1991. 
+It can also be known as the platform as it provides its own JRE and API.
+
+
+2) Why is Java a platform independent language?
+Java language was developed in such a way that it does not depend on any hardware or software due to the fact that the compiler 
+compiles the code and then converts it to platform-independent byte code which can be run on multiple systems.
+The only condition to run that byte code is for the machine to have a runtime environment (JRE) installed in it.
+
+
+3) List the features of Java Programming language.
+There are the following features in Java Programming Language.
+
+Simple: 
+Java is easy to learn. The syntax of Java is based on C++ which makes easier to write the program in it.
+
+Object-Oriented: 
+Java follows the object-oriented paradigm which allows us to maintain our code as the combination of different type of objects 
+that incorporates both data and behavior.
+
+Portable: 
+Java supports read-once-write-anywhere approach. We can execute the Java program on every machine. 
+Java program (.java) is converted to bytecode (.class) which can be easily run on every machine.
+
+Platform Independent: 
+Java is a platform independent programming language. It is different from other programming languages like C and C++ which 
+needs a platform to be executed. Java comes with its platform on which its code is executed. 
+Java doesn't depend upon the operating system to be executed.
+
+Secured: 
+Java is secured because it doesn't use explicit pointers. Java also provides the concept of ByteCode and 
+Exception handling which makes it more secured.
+
+Robust: 
+Java is a strong programming language as it uses strong memory management. The concepts like Automatic garbage collection, 
+Exception handling, etc. make it more robust.
+
+Architecture Neutral: 
+Java is architectural neutral as it is not dependent on the architecture. In C, the size of data types may vary according 
+to the architecture (32 bit or 64 bit) which doesn't exist in Java.
+
+Interpreted: 
+Java uses the Just-in-time (JIT) interpreter along with the compiler for the program execution.
+
+High Performance: 
+Java is faster than other traditional interpreted programming languages because Java bytecode is "close" to native code. 
+It is still a little bit slower than a compiled language (e.g., C++).
+
+Multithreaded: 
+We can write Java programs that deal with many tasks at once by defining multiple threads. 
+The main advantage of multi-threading is that it doesn't occupy memory for each thread. 
+It shares a common memory area. Threads are important for multi-media, Web applications, etc.
+
+Distributed: 
+Java is distributed because it facilitates users to create distributed applications in Java. 
+RMI and EJB are used for creating distributed applications. 
+This feature of Java makes us able to access files by calling the methods from any machine on the internet.
+
+Dynamic: 
+Java is a dynamic language. It supports dynamic loading of classes. It means classes are loaded on demand. 
+It also supports functions from its native languages, i.e., C and C++.
+
+
+4) Explain about Java Virtual Machine? 
+JVM is a program that interprets the intermediate Java byte code and generates the desired output. 
+It is because of byte code and JVM that programs written in Java are highly portable. 
+
+
+5) What is JIT compiler?
+Just-In-Time(JIT) compiler: It is used to improve the performance. JIT compiles parts of the bytecode 
+that have similar functionality at the same time, and hence reduces the amount of time needed for compilation. 
+Here the term “compiler” refers to a translator from the instruction set of a Java virtual machine (JVM) 
+to the instruction set of a specific CPU.
+
+
+6) What is the platform?
+A platform is the hardware or software environment in which a piece of software is executed. 
+There are two types of platforms, software-based and hardware-based. 
+Java provides the software-based platform.
+
+
+7) What are the main differences between the Java platform and other platforms?
+There are the following differences between the Java platform and other platforms.
+
+Java is the software-based platform whereas other platforms may be the hardware platforms or software-based platforms.
+Java is executed on the top of other hardware platforms whereas other platforms can only have the hardware components.
+
+
+8) What gives Java its 'write once and run anywhere' nature?
+The bytecode. Java compiler converts the Java programs into the class file (Byte Code) which is the intermediate language 
+between source code and machine code. This bytecode is not platform specific and can be executed on any computer.
+
+
+9) What is classloader?
+Classloader is a subsystem of JVM which is used to load class files. 
+Whenever we run the java program, it is loaded first by the classloader.
+
+
+10) Is delete, next, main, exit or null keyword in java?
+No.
+
+
+11) If I don't provide any arguments on the command line, 
+then what will the value stored in the String array 
+passed into the main() method, empty or NULL?
+It is empty, but not null.
+
+
+12) What if I write static public void instead of public static void?
+The program compiles and runs correctly because the order of specifiers doesn't matter in Java.
+
+
+13) What is the default value of the local variables?
+The local variables are not initialized to any default value, neither primitives nor object references.
+
+
+14) What are the various access specifiers in Java?
+In Java, access specifiers are the keywords which are used to define the access scope of the method, class, or a variable. 
+In Java, there are four access specifiers given below.
+
+Public 
+The classes, methods, or variables which are defined as public, can be accessed by any class or method.
+
+Protected 
+Protected can be accessed by the class of the same package, or by the sub-class of this class, or within the same class.
+
+Default 
+Default are accessible within the package only. By default, all the classes, methods, and variables are of default scope.
+
+Private 
+The private class, methods, or variables defined as private can be accessed within the class only.
+
+
+15) What is the purpose of static methods and variables?
+The methods or variables defined as static are shared among all the objects of the class. 
+The static is the part of the class and not of the object. The static variables are stored in the class area, and 
+we do not need to create the object to access such variables. Therefore, static is used in the case, 
+where we need to define variables or methods which are common to all the objects of the class.
+
+For example, In the class simulating the collection of the students in a college, 
+the name of the college is the common attribute to all the students. 
+Therefore, the college name will be defined as static.
+
+
+16) Explain Typecasting
+The concept of assigning a variable of one data type to a variable of another data type. 
+It is not possible for the boolean data type.
+It is of two types:
+
+Implicit
+Explicit
+
+
+17) Explain different types of typecasting?
+
+Different types of typecasting are:
+
+Implicit: Storing values from a smaller data type to the larger data type. It is automatically done by the compiler.
+
+Explicit: Storing the value of a larger data type into a smaller data type. This results in information loss:
+
+Truncation: While converting a value from a larger data type to a smaller data type, the extra data would be truncated.
+Let us see the code example: 
+   float f = 3.14f; 
+   int i  = (int) f; 
+
+Out of Range: Typecasting does not allow to assign value more than its range; if that happens then the data is lost in such case. 
+Let us understand this: 
+long l = 123456789; 
+byte b = (byte) l;      // byte is of not the same range as long so there will be loss of data. 
+
+
+18) How is Java different from C++?
+C++ is only a  compiled language, whereas Java is compiled as well as an interpreted language.
+Java programs are machine-independent whereas a c++ program can run only in the machine in which it is compiled. 
+C++ allows users to use pointers in the program. Whereas java doesn’t allow it. Java internally uses pointers. 
+C++ supports the concept of Multiple inheritances whereas Java doesn't support this. 
+And it is due to avoiding the complexity of name ambiguity that causes the diamond problem.
+
+
+19) What are the advantages of Packages in Java?
+There are various advantages of defining packages in Java.
+
+Packages avoid the name clashes.
+The Package provides easier access control.
+We can also have the hidden classes that are not visible outside and used by the package.
+It is easier to locate the related classes.
+
+
+20) What is the difference between an Inner Class and a Sub-Class?
+Ans: An Inner class is a class which is nested within another class. An Inner class has access rights for the class which is 
+nesting it and it can access all variables and methods defined in the outer class.
+A sub-class is a class which inherits from another class called super class. 
+Sub-class can access all public and protected methods and fields of its super class.
+
+
+21) What is data encapsulation and what’s its significance?
+Ans: Encapsulation is a concept in Object Oriented Programming for combining properties and methods in a single unit.
+Encapsulation helps programmers to follow a modular approach for software development as each object has its own 
+set of methods and variables and serves its functions independent of other objects. 
+Encapsulation also serves data hiding purpose.
+
+
+22) What are Loops in Java? What are three types of loops?
+Ans: Looping is used in programming to execute a statement or a block of statement repeatedly. 
+There are three types of loops in Java:
+
+1) For Loops
+
+For loops are used in java to execute statements repeatedly for a given number of times. 
+For loops are used when number of times to execute the statements is known to programmer.
+
+2) While Loops
+
+While loop is used when certain statements need to be executed repeatedly until a condition is fulfilled. 
+In while loops, condition is checked first before execution of statements.
+
+3) Do While Loops
+
+Do While Loop is same as While loop with only difference that condition is checked after execution of block of statements. 
+Hence in case of do while loop, statements are executed at least once.
+
+
+23) What is an infinite Loop? How infinite loop is declared?
+Ans: An infinite loop runs without any condition and runs infinitely. 
+An infinite loop can be broken by defining any breaking logic in the body of the statement blocks.
+
+Infinite loop is declared as follows:
+for (;;)
+{
+    // Statements to execute
+
+    // Add any loop breaking logic
+}
+
+
+24) What is the difference between continue and break statement?
+Ans: break and continue are two important keywords used in Loops. When a break keyword is used in a loop, 
+loop is broken instantly while when continue keyword is used, current iteration is broken and loop continues with next iteration.
+
+
+25) What is the difference between double and float variables in Java?
+Ans: In java, float takes 4 bytes in memory while Double takes 8 bytes in memory. 
+Float is single precision floating point decimal number while Double is double precision decimal number.
+
+
+26) What is Final Keyword in Java? Give an example.
+Ans: In java, a constant is declared using the keyword Final. Value can be assigned only once and after assignment, 
+value of a constant can’t be changed.
+In below example, a constant with the name const_val is declared and assigned avalue:
+Private Final int const_val=100
+When a method is declared as final,it can NOT be overridden by the subclasses.This method are faster than any other method,
+because they are resolved at complied time. When a class is declares as final,it cannot be subclassed. 
+
+
+27) Can main() method in Java can return any data?
+Ans: In java, main() method can’t return any data and hence, it’s always declared with a void return type.
+
+
+28) What are Java Packages? What’s the significance of packages?
+Ans: In Java, package is a collection of classes and interfaces which are bundled together as they are related to each other. 
+Use of packages helps developers to modularize the code and group the code for proper re-use. 
+Once code has been packaged in Packages, it can be imported in other classes and used.
+
+
+29) Can we declare a class as Abstract without having any abstract method?
+Ans: Yes we can create an abstract class by using abstract keyword before class name even if it doesn’t have any abstract method. 
+However, if a class has even one abstract method, it must be declared as abstract otherwise it will give an error.
+
+
+30) What is object-oriented paradigm?
+It is a programming paradigm based on objects having data and methods defined in the class to which it belongs. 
+Object-oriented paradigm aims to incorporate the advantages of modularity and reusability. 
+Objects are the instances of classes which interacts with one another to design applications and programs. 
+There are the following features of the object-oriented paradigm.
+
+Follows the bottom-up approach in program design.
+Focus on data with methods to operate upon the object's data
+Includes the concept like Encapsulation and abstraction which hides the complexities from the user and show only functionality.
+Implements the real-time approach like inheritance, abstraction, etc.
+The examples of the object-oriented paradigm are C++, Simula, Smalltalk, Python, C#, etc.
+
+
+31) What is an object?
+The Object is the real-time entity having some state and behavior. In Java, Object is an instance of the class having the 
+instance variables as the state of the object and the methods as the behavior of the object. 
+The object of a class can be created by using the new keyword.
+
+
+30) What is the difference between an object-oriented programming language and object-based programming language?
+There are the following basic differences between the object-oriented language and object-based language.
+
+Object-oriented languages follow all the concepts of OOPs whereas, 
+the object-based language doesn't follow all the concepts of OOPs like inheritance and polymorphism.
+
+Object-oriented languages do not have the inbuilt objects whereas 
+Object-based languages have the inbuilt objects, for example, JavaScript has window object.
+
+Examples of object-oriented programming are Java, C#, Smalltalk, etc. whereas 
+the examples of object-based languages are JavaScript, VBScript, etc.
+
+
+31) What is the constructor?
+The constructor can be defined as the special type of method that is used to initialize the state of an object. 
+It is invoked when the class is instantiated, and the memory is allocated for the object. 
+Every time, an object is created using the new keyword, the default constructor of the class is called. 
+The name of the constructor must be similar to the class name. The constructor must not have an explicit return type.
+
+
+32) How many types of constructors are used in Java?
+Based on the parameters passed in the constructors, there are two types of constructors in Java.
+
+Default Constructor: 
+default constructor is the one which does not accept any value. The default constructor is mainly used to initialize the 
+instance variable with the default values. It can also be used for performing some useful task on object creation. 
+A default constructor is invoked implicitly by the compiler if there is no constructor defined in the class.
+
+Parameterized Constructor: 
+The parameterized constructor is the one which can initialize the instance variables with the given values. 
+In other words, we can say that the constructors which can accept the arguments are called parameterized constructors.
+
+
+33) Does constructor return any value?
+Ans: yes, The constructor implicitly returns the current instance of the class 
+(You can't use an explicit return type with the constructor).
+
+
+34) Is constructor inherited?
+No, The constructor is not inherited.
+
+
+35) Can you make a constructor final?
+No, the constructor can't be final.
+
+
+36) Can we overload the constructors?
+Yes, the constructors can be overloaded by changing the number of arguments accepted by the constructor or 
+by changing the data type of the parameters.
+
+
+37) What do you understand by copy constructor in Java?
+There is no copy constructor in java. However, we can copy the values from one object to another like copy constructor in C++.
+
+There are many ways to copy the values of one object into another in java. They are:
+By constructor
+By assigning the values of one object into another
+By clone() method of Object class
+
+
+38) What is the static method?
+A static method belongs to the class rather than the object.
+There is no need to create the object to call the static methods.
+A static method can access and change the value of the static variable.
+
+
+39) What are the restrictions that are applied to the Java static methods?
+Two main restrictions are applied to the static methods.
+The static method can not use non-static data member or call the non-static method directly.
+this and super cannot be used in static context as they are non-static.
+
+
+40) Why is the main method static?
+Because the object is not required to call the static method. If we make the main method non-static, 
+JVM will have to create its object first and then call main() method which will lead to the extra memory allocation.
+
+
+41) Can we override the static methods?
+No, we can't override static methods.
+
+
+42) What is the static block?
+Static block is used to initialize the static data member. 
+It is executed before the main method, at the time of classloading.
+
+
+43) Can we execute a program without main() method?
+Ans) No, It was possible before JDK 1.7 using the static block. Since JDK 1.7, it is not possible.
+
+
+44) What if the static modifier is removed from the signature of the main method?
+Program compiles. However, at runtime, It throws an error "NoSuchMethodError."
+
+
+45) Can we make constructors static?
+As we know that the static context (method, block, or variable) belongs to the class, not the object. 
+Since Constructors are invoked only when the object is created, there is no sense to make the constructors static. 
+However, if you try to do so, the compiler will show the compiler error.
+
+
+46) Can we make the abstract methods static in Java?
+In Java, if we make the abstract methods static, It will become the part of the class, and we can directly call it 
+which is unnecessary. Calling an undefined method is completely useless therefore it is not allowed.
+
+
+47) Can we declare the static variables and methods in an abstract class?
+Yes, we can declare static variables and methods in an abstract method. As we know that there is no requirement 
+to make the object to access the static context, therefore, we can access the static context declared inside the abstract class 
+by using the name of the abstract class.
+
+
+48) What is this keyword in java?
+The this keyword is a reference variable that refers to the current object. There are the various uses of this keyword in Java. 
+It can be used to refer to current class properties such as instance methods, variable, constructors, etc. It can also be passed as 
+an argument into the methods or constructors. It can also be returned from the method as the current class instance.
+
+
+49) What are the main uses of this keyword?
+There are the following uses of this keyword.
+
+this can be used to refer to the current class instance variable.
+this can be used to invoke current class method (implicitly)
+this() can be used to invoke the current class constructor.
+this can be passed as an argument in the method call.
+this can be passed as an argument in the constructor call.
+this can be used to return the current class instance from the method.
+
+
+50) Can we assign the reference to this variable?
+No, this cannot be assigned to any value because it always points to the current class object and 
+this is the final reference in Java. However, if we try to do so, the compiler error will be shown.
+
+
+51) Can this keyword be used to refer static members?
+Yes, It is possible to use this keyword to refer static members because this is just a reference variable which refers 
+to the current class object. However, as we know that, it is unnecessary to access static variables through objects, 
+therefore, it is not the best practice to use this to refer static members. 
+
+
+52) How can constructor chaining be done using this keyword?
+Constructor chaining enables us to call one constructor from another constructor of the class with respect 
+to the current class object. We can use this keyword to perform constructor chaining within the same class.
+
+
+53) What is the Inheritance?
+Inheritance is a mechanism by which one object acquires all the properties and behavior of another object of another class. 
+It is used for Code Reusability and Method Overriding. The idea behind inheritance in Java is that you can create new classes 
+that are built upon existing classes. When you inherit from an existing class, you can reuse methods and 
+fields of the parent class. Moreover, you can add new methods and fields in your current class also. 
+Inheritance represents the IS-A relationship which is also known as a parent-child relationship.
+
+There are five types of inheritance in Java.
+
+Single-level inheritance
+Multi-level inheritance
+Multiple Inheritance
+Hierarchical Inheritance
+Hybrid Inheritance
+Multiple inheritance is not supported in Java through class.
+
+
+54) Why is Inheritance used in Java?
+There are various advantages of using inheritance in Java that is given below.
+
+Inheritance provides code reusability. The derived class does not need to redefine the method of base class unless 
+it needs to provide the specific implementation of the method.
+
+Runtime polymorphism cannot be achieved without using inheritance.
+
+We can simulate the inheritance of classes with the real-time objects which makes OOPs more realistic.
+
+Inheritance provides data hiding. The base class can hide some data from the derived class by making it private.
+
+Method overriding cannot be achieved without inheritance. By method overriding, 
+we can give a specific implementation of some basic method contained by the base class.
+
+
+55) Which class is the superclass for all the classes?
+The object class is the superclass of all other classes in Java.
+
+
+56) Why is multiple inheritance not supported in java?
+To reduce the complexity and simplify the language, multiple inheritance is not supported in java. 
+Consider a scenario where A, B, and C are three classes. The C class inherits A and B classes. 
+If A and B classes have the same method and you call it from child class object, 
+there will be ambiguity to call the method of A or B class.
+
+Since the compile-time errors are better than runtime errors, Java renders compile-time error if you inherit 2 classes. 
+So whether you have the same method or different, there will be a compile time error.
+
+
+57) Why does Java not support pointers?
+The pointer is a variable that refers to the memory address. 
+They are not used in Java because they are unsafe(unsecured) and complex to understand.
+
+
+58) What is super in java?
+The super keyword in Java is a reference variable that is used to refer to the immediate parent class object. Whenever you create 
+the instance of the subclass, an instance of the parent class is created implicitly which is referred by super reference variable. 
+The super() is called in the class constructor implicitly by the compiler if there is no super or this.
+
+
+59) What are the main uses of the super keyword?
+There are the following uses of super keyword.
+
+super can be used to refer to the immediate parent class instance variable.
+super can be used to invoke the immediate parent class method.
+super() can be used to invoke immediate parent class constructor.
+
+
+60) What are the differences between this and super keyword?
+There are the following differences between this and super keyword.
+
+The super keyword always points to the parent class contexts whereas this keyword always points to the current class context.
+
+The super keyword is primarily used for initializing the base class variables within the derived class constructor whereas 
+this keyword primarily used to differentiate between local and instance variables when passed in the class constructor.
+
+The super and this must be the first statement inside constructor otherwise the compiler will throw an error.
+
+
+61) Can you use this() and super() both in a constructor?
+No, because this() and super() must be the first statement in the class constructor.
+
+
+62) What is method overloading?
+Method overloading is the polymorphism technique which allows us to create multiple methods with the same name but different signature. 
+We can achieve method overloading in two ways.
+
+By Changing the number of arguments
+By Changing the data type of arguments
+Method overloading increases the readability of the program. Method overloading is performed to figure out the program quickly.
+
+
+63) Why is method overloading not possible by changing the return type in java?
+In Java, method overloading is not possible by changing the return type of the program due to avoid the ambiguity.
+
+
+64) Can we overload the methods by making them static?
+No, We cannot overload the methods by just applying the static keyword to them(number of parameters and types are the same).
+
+
+65) Can we overload the main() method?
+Yes, we can have any number of main methods in a Java program by using method overloading.
+
+
+66) What is method overloading with type promotion?
+By Type promotion is method overloading, we mean that one data type can be promoted to another implicitly 
+if no exact matching is found.
+the byte can be promoted to short, int, long, float or double. The short datatype can be promoted to int, long, float or double. 
+The char datatype can be promoted to int, long, float or double and so on.
+
+
+67) What is method overriding:
+If a subclass provides a specific implementation of a method that is already provided by its parent class, 
+it is known as Method Overriding. It is used for runtime polymorphism and to implement the interface methods.
+
+Rules for Method overriding
+
+The method must have the same name as in the parent class.
+The method must have the same signature as in the parent class.
+Two classes must have an IS-A relationship between them.
+
+
+68) Can we override the static method?
+No, you can't override the static method because they are the part of the class, not the object.
+
+
+69) Can we override the overloaded method?
+Yes.
+
+
+70) Can we override the private methods?
+No, we cannot override the private methods because the scope of private methods is limited to the class and 
+we cannot access them outside of the class.
+
+
+71) What is the final variable?
+In Java, the final variable is used to restrict the user from updating it. If we initialize the final variable, 
+we can't change its value. In other words, we can say that the final variable once assigned to a value, 
+can never be changed after that. The final variable which is not assigned to any value can only be assigned 
+through the class constructor.
+
+
+72) What is the final method?
+If we change any method to a final method, we can't override it.
+
+
+73) What is the final class?
+If we make any class final, we can't inherit it into any of the subclasses.
+
+
+74) Can you declare the main method as final?
+Yes, We can declare the main method as public static final void main(String[] args){}.
+
+
+75) Can we declare a constructor as final?
+The constructor can never be declared as final because it is never inherited. Constructors are not ordinary methods; 
+therefore, there is no sense to declare constructors as final. However, if you try to do so, The compiler will throw an error.
+
+
+76) Can we declare an interface as final?
+No, we cannot declare an interface as final because the interface must be implemented by some class to provide its definition. 
+Therefore, there is no sense to make an interface final. However, if you try to do so, the compiler will show an error.
+
+
+77) What is the difference between the final method and abstract method?
+The main difference between the final method and abstract method is that the abstract method cannot be final 
+as we need to override them in the subclass to give its definition.
+
+
+78) What is Runtime Polymorphism?
+Runtime polymorphism or dynamic method dispatch is a process in which a call to an overridden method is resolved at runtime 
+rather than at compile-time. In this process, an overridden method is called through the reference variable of a superclass. 
+The determination of the method to be called is based on the object being referred to by the reference variable.
+
+
+79) Can you achieve Runtime Polymorphism by data members?
+No, because method overriding is used to achieve runtime polymorphism and data members cannot be overridden. 
+We can override the member functions but not the data members.
+
+
+80) What is the difference between static binding and dynamic binding?
+In case of the static binding, the type of the object is determined at compile-time whereas, 
+in the dynamic binding, the type of the object is determined at runtime.
+
+
+81) What is the abstraction?
+Abstraction is a process of hiding the implementation details and showing only functionality to the user. 
+It displays just the essential things to the user and hides the internal information, for example, 
+sending SMS where you type the text and send the message. You don't know the internal processing about the message delivery. 
+Abstraction enables you to focus on what the object does instead of how it does it. 
+Abstraction lets you focus on what the object does instead of how it does it.
+
+In Java, there are two ways to achieve the abstraction.
+Abstract Class
+Interface
+
+
+82) What is the difference between abstraction and encapsulation?
+Abstraction hides the implementation details whereas encapsulation wraps code and data into a single unit.
+
+
+83) What is the abstract class?
+A class that is declared as abstract is known as an abstract class. It needs to be extended and its method implemented. 
+It cannot be instantiated. It can have abstract methods, non-abstract methods, constructors, and static methods. 
+It can also have the final methods which will force the subclass not to change the body of the method.
+
+
+84) Can there be an abstract method without an abstract class?
+No, if there is an abstract method in a class, that class must be abstract.
+
+
+85) Can you use abstract and final both with a method?
+No, because we need to override the abstract method to provide its implementation, whereas we can't override the final method.
+
+
+86) What is the interface?
+The interface is a blueprint for a class that has static constants and abstract methods. It can be used to achieve full abstraction 
+and multiple inheritance. It is a mechanism to achieve abstraction. There can be only abstract methods in the Java interface, 
+not method body. It is used to achieve abstraction and multiple inheritance in Java. 
+
+
+87) Can you declare an interface method static?
+No, because methods of an interface are abstract by default, and we can not use static and abstract together.
+
+
+88) Can the Interface be final?
+No, because an interface needs to be implemented by the other class and if it is final, it can't be implemented by any class.
+
+
+89) Can we define private and protected modifiers for the members in interfaces?
+No, they are implicitly public.
+
+
+90) What are the advantages of Encapsulation in Java?
+There are the following advantages of Encapsulation in Java?
+
+By providing only the setter or getter method, you can make the class read-only or write-only. 
+In other words, you can skip the getter or setter methods.
+
+It provides you the control over the data. Suppose you want to set the value of id which should be greater than 100 only, 
+you can write the logic inside the setter method. You can write the logic not to store the negative numbers in the setter methods.
+
+It is a way to achieve data hiding in Java because other class will not be able to access the data through the private data members.
+
+The encapsulate class is easy to test. So, it is better for unit testing.
+
+The standard IDE's are providing the facility to generate the getters and setters. 
+So, it is easy and fast to create an encapsulated class in Java.
+
+
+91) What is Exception Handling?
+Exception Handling is a mechanism that is used to handle runtime errors. It is used primarily to handle checked exceptions. 
+Exception handling maintains the normal flow of the program. 
+There are mainly two types of exceptions: checked and unchecked. Here, the error is considered as the unchecked exception.
+
+
+92) How many types of exception can occur in a Java program?
+There are mainly two types of exceptions: checked and unchecked. Here, an error is considered as the unchecked exception. According to Oracle, there are three types of exceptions:
+
+Checked Exception: Checked exceptions are the one which are checked at compile-time. 
+For example, SQLException, ClassNotFoundException, etc.
+
+Unchecked Exception: Unchecked exceptions are the one which are handled at runtime because they can not be checked at compile-time. 
+For example, ArithmaticException, NullPointerException, ArrayIndexOutOfBoundsException, etc.
+
+Error: Error cause the program to exit since they are not recoverable. For Example, OutOfMemoryError, AssertionError, etc.
+
+
+93) Is it necessary that each try block must be followed by a catch block?
+It is not necessary that each try block must be followed by a catch block. 
+It should be followed by either a catch block OR a finally block. 
+So whatever exceptions are likely to be thrown should be declared in the throws clause of the method.
+
+
+94) What is finally block?
+The "finally" block is used to execute the important code of the program. It is executed whether an exception is handled or not. 
+
+
+95) Can finally block be used without a catch?
+Yes, According to the definition of finally block, it must be followed by a try or catch block, 
+therefore, we can use try block instead of catch.
+
+
+96) Is there any case when finally will not be executed?
+Finally block will not be executed if program exits(either by calling System.exit() or 
+by causing a fatal error that causes the process to abort).
+
+
+97) Can an exception be rethrown?
+Yes.
+
+
+98) What is a nested class?
+The nested class can be defined as the class which is defined inside another class or interface. 
+We use the nested class to logically group classes and interfaces in one place so that it can be more readable and maintainable. 
+A nested class can access all the data members of the outer class including private data members and methods.
+
+
+99) Is there any difference between nested classes and inner classes?
+Yes, inner classes are non-static nested classes. In other words, we can say that inner classes are the part of nested classes.
+
+
+100) What is Garbage Collection?
+Garbage collection is a process of reclaiming the unused runtime objects. It is performed for memory management.
+
+
+101) What is an applet?
+An applet is a small java program that runs inside the browser and generates dynamic content. 
+It is embedded in the webpage and runs on the client side. It is secured and takes less response time. 
+It can be executed by browsers running under many platforms, including Linux, Windows, Mac Os, etc. 
+However, the plugins are required at the client browser to execute the applet.
+
+
+102) What is the difference between an Inner Class and a Sub-Class?
+Ans: An Inner class is a class which is nested within another class. An Inner class has access rights for 
+the class which is nesting it and it can access all variables and methods defined in the outer class.
+
+A sub-class is a class which inherits from another class called super class. 
+Sub-class can access all public and protected methods and fields of its super class.
+
+
+103) What’s the difference between an array and Vector?
+Ans: An array groups data of same primitive type and is static in nature while 
+vectors are dynamic in nature and can hold data of different data types.
+
+
+104) What is multi-threading?
+Ans: Multi threading is a programming concept to run multiple tasks in a concurrent manner within a single program. 
+Threads share same process stack and running in parallel. It helps in performance improvement of any program.
+
+
+105) How are destructors defined in Java?
+Ans: In Java, there are no destructors defined in the class as there is no need to do so. 
+Java has its own garbage collection mechanism which does the job automatically by destroying the objects when no longer referenced.
+
+
+106) What’s meant by anonymous class?
+Ans: An anonymous class is a class defined without any name in a single line of code using new keyword.
+
+
+107) What is meant by the Local variable and the Instance variable?
+
+Local variables are defined in the method and scope of the variables that exist inside the method itself.
+
+Instance variable is defined inside the class and outside the method and the scope of the variables exists throughout the class.
+
+
+108) What is a Class?
+All Java codes are defined in a Class. It has variables and methods.
+Variables are attributes which define the state of a class.
+Methods are the place where the exact business logic has to be done. 
+It contains a set of statements (or) instructions to satisfy the particular requirement.
+
+
+109) Define Dynamic Method Dispatch.
+The Dynamic method dispatch is a process where the method call is executed during the runtime. 
+A reference variable is used to call the super-class. This process is also known as Run-Time Polymorphism.  
+
+
+110) What is JDBC?
+JDBC is an abbreviation for Java Database Connector.
+JDBC is an abstraction layer used to establish connectivity between an existing database and a Java application.
+
+
+111) What is final keyword in Java?
+final is a special keyword in Java that is used as a non-access modifier. A final variable can be used in different contexts such as:
+
+final variable
+When the final keyword is used with a variable then its value can’t be changed once assigned. 
+In case the no value has been assigned to the final variable then using only the class constructor a value can be assigned to it.
+
+final method
+When a method is declared final then it can’t be overridden by the inheriting class.
+
+final class
+When a class is declared as final in Java, it can’t be extended by any subclass class but it can extend other class.
+
+
+
+
+
+

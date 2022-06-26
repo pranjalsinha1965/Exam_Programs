@@ -1,0 +1,241 @@
+1) What is HTML?
+HTML stands for Hyper Text Markup Language. It is a language of World Wide Web. 
+It is a standard text formatting language which is used to create and display pages on the Web. 
+It makes the text more interactive and dynamic. It can turn text into images, tables, links.
+
+
+2) What are Tags?
+HTML tags are composed of three things: an opening tag, content and ending tag. Some tags are unclosed tags.
+
+HTML documents contain two things:
+content, and
+tags
+When a web browser reads an HTML document, the browser reads it from top to bottom and left to right. 
+HTML tags are used to create HTML documents and render their properties. Each HTML tags have different properties.
+
+
+3) Do all HTML tags have an end tag?
+No. There are some HTML tags that don't need a closing tag. For example: <image> tag, <br> tag.
+
+
+4) What is formatting in HTML?
+The HTML formatting is a process of format the text for a better look and feel. 
+It uses different tags to make text bold, italicized, underlined.
+
+
+5) How many types of heading does an HTML contain?
+The HTML contains six types of headings which are defined with the <h1> to <h6> tags. 
+Each type of heading tag displays different text size from another. 
+So, <h1> is the largest heading tag and <h6> is the smallest one.
+
+
+6) How to create a hyperlink in HTML?
+The HTML provides an anchor tag to create a hyperlink that links one page to another page. 
+These tags can appear in any of the following ways:
+
+Unvisited link - It is displayed, underlined and blue.
+Visited link - It is displayed, underlined and purple.
+Active link - It is displayed, underlined and red.
+
+
+7) Which HTML tag is used to display the data in the tabular form?
+The HTML table tag is used to display data in tabular form (row * column). 
+It also manages the layout of the page, e.g., header section, navigation bar, body content, footer section.
+
+Here is the list of tags used while displaying the data in the tabular form:
+
+<table>	It defines a table.
+<tr>	It defines a row in a table.
+<th>	It defines a header cell in a table.
+<td>	It defines a cell in a table.
+<caption>	It defines the table caption.
+<colgroup>	It specifies a group of one or more columns in a table for formatting.
+<col>	It is used with <colgroup> element to specify column properties for each column.
+<tbody>	It is used to group the body content in a table.
+<thead>	It is used to group the header content in a table.
+<tfooter>	It is used to group the footer content in a table.
+
+
+8) What are some common lists that are used when designing a page?
+There are many common lists which are used to design a page. 
+You can choose any or a combination of the following list types:
+
+Ordered list - The ordered list displays elements in numbered format. It is represented by <ol> tag.
+Unordered list - The unordered list displays elements in bulleted format. It is represented by <ul> tag.
+Definition list - The definition list displays elements in definition form like in dictionary. 
+The <dl>, <dt> and <dd> tags are used to define description list.
+
+
+9) What is the difference between HTML elements and tags?
+HTML elements communicate to the browser to render text. When the elements are enclosed by brackets <>, they form HTML tags. 
+Most of the time, tags come in a pair and surround content.
+
+
+10) Does a hyperlink only apply to text?
+No, you can use hyperlinks on text and images both. The HTML anchor tag defines a hyperlink that links one page to another page. 
+The "href" attribute is the most important attribute of the HTML anchor tag.
+
+Syntax
+<a href = "..........."> Link Text </a>  
+
+
+11) What is a style sheet?
+A style sheet is used to build a consistent, transportable, and well-designed style template. 
+You can add these templates on several different web pages. 
+It describes the look and formatting of a document written in markup language.
+
+
+12) Can you create a multi-colored text on a web page?
+Yes. To create a multicolor text on a web page you can use <font color ="color"> </font> for the specific texts you want to color.
+
+
+13) Is it possible to change the color of the bullet?
+The color of the bullet is always the color of the first text of the list. So, if you want to change the color of the bullet, 
+you must change the color of the text.
+
+
+14) What is a marquee?
+Marquee is used to put the scrolling text on a web page. It scrolls the image or text up, down, left or right automatically. 
+You should put the text which you want to scroll within the <marquee>......</marquee> tag.
+
+
+15) How many tags can be used to separate a section of texts?
+Three tags are used to separate the texts.
+
+<br> tag - Usually <br> tag is used to separate the line of text. It breaks the current line and conveys the flow to the next line
+<p> tag - The <p> tag contains the text in the form of a new paragraph.
+<blockquote> tag - It is used to define a large quoted section. If you have a large quotation, 
+then put the entire text within <blockquote>.............</blockquote> tag.
+
+
+16) How to make a picture of a background image of a web page?
+To make a picture a background image on a web page, you should put the following tag code after the </head> tag.
+
+<body background = "image.gif">  
+
+
+17) What are empty elements?
+HTML elements with no content are called empty elements. For example: <br>, <hr> etc.
+
+
+18) How is Cell Padding different from Cell Spacing?
+Cell Spacing is the space or gap between two consecutive cells. Whereas, 
+Cell Padding is the space or gap between the text/ content of the cell and the edge/ border of the cell. 
+
+
+19) How can we club two or more rows or columns into a single row or column in an HTML table?
+HTML provides two table attributes “rowspan” and “colspan” to make a cell span to multiple rows and columns respectively.
+
+
+20) In how many ways can we specify the CSS styles for the HTML element?
+There are three ways in which we can specify the styles for HTML elements:
+
+Inline: Here we use the ‘style’ attribute inside the HTML element.
+
+Internal: Here we use the <style> tag inside the <head> tag. 
+To apply the style we bind the elements using ‘id’ or ‘class’ attributes.
+
+External: Here we use the <link> tag inside <head> tag to reference the CSS file into our HTML code. 
+Again the binding between elements and styles is done using ‘id’ or ‘class’ attributes.
+
+
+21) Difference between link tag <link> and anchor tag <a>?
+The anchor tag <a> is used to create a hyperlink to another webpage or to a certain part of the webpage and these links are clickable, 
+whereas, link tag <link> defines a link between a document and an external resource and these are not clickable.
+
+
+22) What are forms and how to create forms in HTML?
+The HTML form is used to collect the user inputs. HTML provides a <form> tag to create forms. To take input from 
+the user we use the <input> tag inside the form so that all collected user data can be sent to the server for processing. 
+There are different input types like ‘button’, ‘checkbox’, ‘number’, ‘text’, ‘password’, ‘submit’ etc.
+
+
+23) When are comments used in HTML?
+To understand the code easily, you can add code comments to your HTML document. These are not displayed in the browser, 
+but they help you in leaving notes for yourself and other developers as to what a section of HTML is for. 
+The start of the comment is denoted by <!– and the end is marked by — >. 
+Anything in the middle will be completely ignored, even if it contains valid HTML.
+
+
+24) What is the hierarchy that is being followed when it comes to style sheets?
+If a single selector includes three different style definitions, the definition that is closest to the actual tag takes precedence. 
+Inline style takes priority over embedded style sheets, which takes priority over external style sheets.
+
+
+25) What are Attributes in HTML?
+An additional attribute is given to each tag to alter the behavior of the tag. Attributes are defined directly after the tag name, 
+inside the angular brackets. They appear in opening tags and can never appear in closing tags.
+
+
+26) What is HTML5?
+Answer: HTML5 is the latest or updated version of the markup language that defines HTML.
+
+
+27) Why Meta tags are used in HTML?
+Answer: Meta tags in HTML are used by the developer to tell the browser about the page description, author of the template, 
+character set, keywords and many more.
+Meta tags are used for search engine optimization to tell the search engine about the page contents.
+
+
+28) How do you add JavaScript to an HTML webpage?
+JavaScript is used for making HTML web pages more interactive, and user-friendly. 
+It is a scripting language that allows you to interact with certain elements on the page, based on user input.
+
+
+29) What are the features of HTML?
+Ans. The following are the features of HTML: 
+
+It is a markup language that provides flexibility to design web pages with text.
+It is easy to use and learn. 
+HTML is platform-independent and can be used on Windows, Linux, and Macintosh, etc.
+It enables programmers to add images, video, and audio to a web page to make it more interactive.
+HTML allows programmers to add a link on the web pages, helping the readers to browse the information of their interest.
+It is case-insensitive. You can use tags either in lower-case or upper-case.
+
+
+30) How to insert an image in HTML?
+Ans. Images can be inserted in an HTML page by using the <img> tags. 
+It is an empty tag that has only attributes and it does not require a closing tag. 
+The <img> tag must be used inside <body>…</body> tag. 
+Following parameters will be required to insert an image using <img> tag
+
+src attribute –  It is used to add the path to the image (URL of the image). 
+alt attribute – It is for adding alternate text.
+Width – To add the width of the image
+Height – To add the height of the image
+Example: 
+
+<img src=”img_pancakes.jpg” alt=”Blueberry Pancakes” width=”500″ height=”600″>
+
+
+31) When is it appropriate to use frames?
+Frames can make navigating a site much easier. If the main links to the site are located in a frame that appears at the top or 
+along the edge of the browser, the content for those links can be displayed in the remainder of the browser window.
+
+
+32) How to give space in HTML?
+In order to add a space in the webpage, Go  where you want to add the space and then use the spacebar. 
+Normally, HTML displays one space between words, no matter how many times you have entered  the space bar. 
+Now if you Type &nbsp; to force an extra space. 
+This is known as a non-breaking space because it helps to prevent a line break at its location.
+
+
+33) How can you insert a copyright symbol in HTML webpage?
+To insert the copyright symbol you can use the “&#169” as well as “&copy” in the HTML file.
+
+
+34) What are Forms in HTML?
+If you want to collect the information of the visitors to the webpage, you can add a form to the webpage. 
+Once the user enters the information into the form fields, it is added to a database specified by you.
+
+
+35) What is the use of an IFrame tag?
+IFrame or Inline Frame is basically an HTML document implanted inside the other  HTML documents on a website. 
+The IFrame element is used for inserting content from other source, which can be an advertisement into a webpage.
+
+
+36) What is the difference between DIV and SPAN in HTML?
+The difference between span and div is that a span element is in-line and usually used for a small chunk of HTML inside a line,
+such as inside a paragraph. Whereas, a div or division element is block-line which is equivalent to having a line-break before 
+and after it and used to group larger chunks of code.
+
